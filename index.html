@@ -2,119 +2,245 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/logoImg.jpg" type="image/jpg">
+    <link rel="icon" href="assets/logoImg.png" type="image/png" />
     <title>Portforlio Website</title>
   </head>
   <body>
-    <!-- NAVIGATION BAR
+    <!-- NAVIGATION BAR -->
     <nav class="navbar">
-    <div class="logo">
-          <img src="assets/logoImg.jpg" class="logoImg" />
-        </div>
+      <div class="logo">
+        <img src="assets/logoImg.png" class="logoImg" />
+      </div>
       <ul>
         <li id="change"><a href="#home">HOME</a></li>
-        <li id="change"><a href="#about">ABOUT</a></li>
-        <li id="change"><a href="#education">EDUCATION</a></li>
-        <li id="change"><a href="#skills">SKILLS</a></li>
-        <li id="change"><a href="#contact">CONTACT ME</a></li>
+        <li id="change"><a href="#about">ABOUT ME</a></li>
+        <li id="change"><a href="#projects">PORTFOLIO</a></li>
+        <li id="change"><a href="#contacts">CONTACT ME</a></li>
       </ul>
-    </nav> -->
+    </nav>
 
     <!-- HERO SECTION -->
     <main class="main">
-    <div class="heroContainer">
-      <section id="home">
+      <section id="home" class="heroContainer">
         <div class="headline">
-          <h1>Hello! My name is Regine Lontoc</h1>
-          <h1 class="subHeadline">SOFTWARE ENGINEER</h1>
+          <h1>Hello! My name is Regine Ann Lontoc</h1>
+          <h2 class="subHeadline">WEBSITE DEVELOPER</h2>
         </div>
-
-        <div class="heroImgDiv">
-          <img src="assets/mainImg.jpg" class="heroImg" />
-        </div>
+        <img src="assets/mainImg.jpg" class="mainImg" />
       </section>
 
       <!-- ABOUT PAGE -->
       <section id="about">
-        <!-- <div style="display: block; width: 100%; height:10px; background-color: blue;">
-        <h1 style="text-align: center;">INFO ABOUT ME</h1>
-        </div> -->
+        <h1 class="sectionHeaderLight">INTRODUCTION</h1>
         <div class="aboutContainer">
-        <div class="aboutDiv1">
-          <img src="assets/aboutImg.jpg" alt="aboutImg"/>
-        </div>
-        <div class="aboutDiv2">
-          <p>
-            I'm a Software Developer with extensive experience for over 4
-            years.
-          </p>
-          <p>
-            My expertise is to create software applications, software
-            programming and many more.
-          </p>
-        </div>
-        <div class="aboutDiv3">
-          <p>
-            Not only I am well-known in software-related field, I'm also
-            proficient in creating and designing websites.
-          </p>
-          <p>
-            I've graduated with a Bachelor's Degree in Computer Science in
-            Cavite State University - Silang Campus and a Master's Degree in
-            Computer Science in De La Salle University.
-          </p>
-        </div>
-        <div class="aboutDiv4">DIV 4</div>
+          <div class="aboutImg">
+            <img src="assets/aboutImg.jpg" alt="aboutImg" />
+          </div>
+          <div class="aboutDiv">
+            <p>
+              I'm Regine, a Bachelor of Science in Computer Science graduate
+              with a passion for building software that solves real-world
+              problems. I enjoy transforming ideas into practical and
+              user-friendly applications, whether it's designing websites,
+              developing systems, or exploring new technologies.
+            </p>
+          </div>
+          <div class="aboutDiv">
+            <p>
+              Throughout my studies, I worked on projects ranging from
+              responsive websites to a scheduling system, where I gained
+              experience in frontend development, backend programming, and
+              database integration. As I continue learning, my goal is to become
+              a developer who builds reliable applications that make a
+              meaningful impact.
+            </p>
+          </div>
+          <div class="aboutImg">
+            <img src="assets/aboutImg2.jpg" alt="aboutImg2" />
+          </div>
+          <div class="aboutImg">
+            <img src="assets/aboutImg3.jpg" alt="aboutImg3" />
+          </div>
+          <div class="aboutDiv">
+            <p>
+              Beyond technology, my Christian faith is an important part of who
+              I am and influences how I approach both my work and my
+              relationships with others. Through the Youth Empowered Ministry at
+              Church of God Silang, I have had the opportunity to serve as both
+              a mentor and a leader. This experience has strengthened my
+              communication, leadership, and teamwork skills while teaching me
+              the importance of integrity, responsibility, and serving others
+              with humility. These values continue to shape the way I
+              collaborate, solve problems, and pursue excellence in both my
+              personal life and my career.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- EDUCATION PAGE -->
       <section id="education">
-        <div class="divEducationImg">
-          <img src="assets/educationImg.jpg" class="educationImg" />
-        </div>
-
+        <h1 class="sectionHeaderDark">EDUCATION</h1>
         <div class="divEduc">
-          <h1>Education</h1>
-          <h1>ELEMENTARY</h1>
-          <p>Dasmarinas Elementary School (2010-2016)</p>
-          <h1>HIGHSCHOOL</h1>
-          <p>Langkaan II National Highschool (2016-2020)</p>
-          <p>Philippine Christian University (2020-2022)</p>
-          <h1>COLLEGE</h1>
-          <p>Cavite State University - Silang Campus (2023-2026)</p>
-          <p>De La Salle University(2026-2028)</p>
+          <img
+            src="assets/lnhs.jfif"
+            alt="Langkaan II National Highschool Logo"
+          />
+          <div>
+            <p>Langkaan II National Highschool (2016-2020)</p>
+            <p>Specialization in Technical Drafting</p>
+          </div>
+        </div>
+        <div class="divEduc">
+          <img
+            src="assets/pcu.png"
+            alt="Philippine Christian University - Dasmariñas Campus Logo"
+          />
+          <div>
+            <p>Philippine Christian University (2020-2022)</p>
+            <p>Science, Technology, Engineering and Mathematics (STEM)</p>
+          </div>
+        </div>
+        <div class="divEduc">
+          <img
+            src="assets/cvsu.jfif"
+            alt="Cavite State University - Silang Campus Logo"
+          />
+          <div>
+            <p>Cavite State University - Silang Campus (2022-2026)</p>
+            <p>Bachelor of Science in Computer Science</p>
+          </div>
         </div>
       </section>
 
       <!-- SKILLS PAGE -->
       <section id="skills">
-        <div>
-          <h1>My Skills</h1>
-          <p>Creating and debugging codes</p>
-          <p>Building and designing websites</p>
-          <p>Solving complex codes</p>
+        <h1 class="sectionHeaderLight">MY SKILLS</h1>
+        <div class="skillsContainer">
+          <div class="skillsDiv">
+            <h1>LANGUAGES</h1>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>React</p>
+            <p>Godot Script</p>
+          </div>
+          <div class="skillsDiv">
+            <h1>TECH TOOLS</h1>
+            <p>Visual Studio Code</p>
+            <p>Canva</p>
+            <p>Trello</p>
+            <p>Godot Engine</p>
+            <p>GitHub</p>
+            <p>Git</p>
+          </div>
+          <div class="skillsDiv">
+            <h1>SOFT SKILLS</h1>
+            <p>Problem Solving</p>
+            <p>Debugging</p>
+            <p>Team Collaboration</p>
+            <p>Communication</p>
+            <p>Time Management</p>
+            <p>Critical Thinking</p>
+            <p>Continuous Learning</p>
+          </div>
         </div>
+      </section>
 
-        <div class="divSkillsImg">
-          <img src="assets/skillsImg.jpg" class="skillsImg" />
-        </div>
-        
-        <div>
-          <h1>Programming Languages</h1>
-          <p>HTML</p>
-          <p>CSS</p>
-          <p>JavaScript</p>
-          <p>React</p>
-          <p>Godot Script</p>
-        </div>
+      <!-- PROJECTS PAGE -->
+      <section id="projects">
+        <h1 class="sectionHeaderDark">MY PROJECTS</h1>
+        <p>Cake Shop E-Commerce Website</p>
+        <p>Bader Metallbau Philippines Enterprise Inc. (BMPEI) Website</p>
+        <p>Hack n’ Slash Game</p>
+        <p>The Quiet Till Game</p>
+        <p>Scheduling System for CvSU-SC</p>
+      </section>
+
+      <!-- CERTIFICATES PAGE -->
+      <section id="certificates">
+        <h1 class="sectionHeaderLight">CERTIFICATES</h1>
+        <img
+          src="assets/htmlBeginner.jpg"
+          alt="HTML Sololearn Beginner Course Certificate"
+        />
+        <img
+          src="assets/javascriptBeginner.jpg"
+          alt="JavaScript Sololearn Beginner Course Certificate"
+        />
+        <img
+          src="assets/javaBeginner.jpg"
+          alt="Java Sololearn Beginner Course Certificate"
+        />
+        <img
+          src="assets/javaIntermediate.jpg"
+          alt="Java Sololearn Intermediate Course Certificate"
+        />
       </section>
 
       <!-- CONTACT ME PAGE -->
-      <section id="contact">
+      <section id="contacts">
+        <h1 class="sectionHeaderDark">CONTACT ME</h1>
+        <div class="contactsMainContainer">
+          <div class="contactsContainer">
+            <div class="contactsDiv">
+              <img src="assets/facebook.png" alt="Facebook" />
+              <div>
+                <p>Facebook</p>
+                <p>https://www.facebook.com/regine.dejesus.14</p>
+              </div>
+            </div>
+            <div class="contactsDiv">
+              <img src="assets/github.png" alt="GitHub" />
+              <div>
+                <p>GitHub</p>
+                <p>github.com/CodeSaysWhat</p>
+              </div>
+            </div>
+          </div>
 
+            <div class="contactsContainer2">
+              <div class="contactsDiv">
+                <img src="assets/instagram.png" alt="Instagram" />
+                <div>
+                  <p>Instagram</p>
+                  <p>https://www.instagram.com/_radjl/</p>
+                </div>
+              </div>
+              <div class="contactsDiv">
+                <img src="assets/linkedin.png" alt="LinkedIn" />
+                <div>
+                  <p>LinkedIn</p>
+                  <p>https://www.linkedin.com/in/regine-ann-lontoc-44524a36a</p>
+                </div>
+              </div>
+            </div>
+
+          <div class="contactsContainer3">
+            <div class="contactsDiv">
+              <img src="assets/google.png" alt="Gmail" />
+              <div>
+                <p>Gmail</p>
+                <p>reginedjesus@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contactsDiv">
+              <img src="assets/contacts.png" alt="Contact Number" />
+              <div>
+                <p>Contact Number</p>
+                <p>09764231893</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer">
+        "All school logos and trademarks belong to their respective owners.
+        <br />
+        This project is for portfolio purposes only."
       </section>
     </main>
-    </div>
   </body>
 </html>
