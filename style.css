@@ -19,6 +19,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
 }
 
 body {
@@ -32,7 +33,7 @@ p {
   font-size: 18px;
   font-family:'Courier Prime', monospace;
   padding: 0 0 10px 0;
-  line-height: 1.6;
+  line-height: 2;
 }
 
 h1 {
@@ -148,6 +149,10 @@ h1 {
     -webkit-text-stroke: 2px black;
   }
 
+  .main {
+    padding-top: 1.5rem;
+  }
+
   .mainImg {
     position: relative;
     top: 2rem;
@@ -161,9 +166,10 @@ h1 {
   .aboutContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
-    margin: 1rem 3rem 1rem 3rem;
+    gap: 2rem;
+    padding-top: 2rem;
     height: auto;
+    background-color: blue;
   }
 
   .aboutDiv {
@@ -174,9 +180,12 @@ h1 {
     grid-column: span 2;
     color: var(--secondary);
     text-align: justify;
+    background-color: red;
   }
 
   .aboutImg img {
+    position: relative;
+
     width: 100%;
     height: auto;
     margin: auto;
@@ -228,6 +237,28 @@ h1 {
   }
   /* PROJECTS SECTION */
 
+  .projectsMainContainer {
+    display: grid;
+    grid-template-columns: 10rem 10rem;
+    align-items: center;
+    background-color: blue;
+  }
+
+  .projectsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: space-between;
+    margin: 2rem;
+    background-color: red;
+    width: 450px;
+  }
+
+  .projectsContainer img {
+    width: 500px;
+    height: auto;
+  }
+
   /* CERTIFICATES SECTION */
   #certificates {
     background-color: var(--primary);
@@ -248,33 +279,19 @@ h1 {
 
   .contactsMainContainer {
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
+    padding: 2rem;
   }
 
-  .contactsContainer .contactsContainer2 .contactsContainer3 {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
+  .contactsContainer {
+    display: inline-block;
   }
 
-  .contactsDiv {
-    display: inline-flex;
-    text-align: left;
-    margin: 12px;
-    gap: 1rem;
-  }
-
-  .contactsDiv img {
+  .contactsContainer img {
     width: 55px;
     height: 55px;
-  }
-
-  .contactsDiv p {
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
   }
 
   /* FOOTER SECTION */
