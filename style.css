@@ -169,7 +169,6 @@ h1 {
     gap: 2rem;
     padding-top: 2rem;
     height: auto;
-    background-color: blue;
   }
 
   .aboutDiv {
@@ -180,12 +179,10 @@ h1 {
     grid-column: span 2;
     color: var(--secondary);
     text-align: justify;
-    background-color: red;
   }
 
   .aboutImg img {
     position: relative;
-
     width: 100%;
     height: auto;
     margin: auto;
@@ -239,37 +236,59 @@ h1 {
 
   .projectsMainContainer {
     display: grid;
-    grid-template-columns: 10rem 10rem;
-    align-items: center;
-    background-color: blue;
+    gap: 2rem;
+    padding-top: 2rem;
   }
 
   .projectsContainer {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: space-between;
-    margin: 2rem;
-    background-color: red;
-    width: 450px;
+    gap: 2rem;
+  }
+
+  .projectsContainer:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .projectDetails {
+    flex: 2;
+    padding: 0 2rem;
+  }
+
+  .projectDetails h2 {
+    font-family: "Courier New", Courier, monospace;
+    margin-bottom: 1rem;
+  }
+
+  .projectDetails p {
+    text-align: justify;
   }
 
   .projectsContainer img {
-    width: 500px;
+    flex: 1;
+    width: calc((100% - 4rem) / 3);
     height: auto;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 30px 1px var(--shadow);
   }
 
   /* CERTIFICATES SECTION */
   #certificates {
     background-color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #certificates h1 {
+    width: 100%;
   }
 
   #certificates img {
     width: 23%;
     height: auto;
     border: solid 1px black;
-    display: inline-block;
-    margin: auto;
   }
 
   /* CONTACTS SECTION */
