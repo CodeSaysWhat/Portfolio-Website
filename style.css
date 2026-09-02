@@ -27,13 +27,14 @@ html {
 }
 
 body {
-  color: var(--primaryText);
+  color: var(--primary-text);
   margin: 0;
   margin-top: 3rem;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--primary-font);
   color: var(--primary-text);
 }
@@ -59,7 +60,6 @@ p {
   .logo {
     height: 65px;
     width: 65px;
-    background-color: var(--secondary);
     margin: 10px 0 0 20px;
     border: solid 2px black;
     border-radius: 50%;
@@ -116,18 +116,18 @@ p {
 
   /* HERO SECTION */
 
-  .hero-container {
+  .hero-section {
     display: flex;
     flex-direction: row;
     padding: 2rem;
-    height: 85vh;
-    background-color: var(--light-primary);
+    height: 90vh;
+    background-color: var(--dark-primary);
   }
 
   .hero-info {
     display: flex;
     flex-direction: column;
-    margin: 2rem 0 2rem 20rem;
+    margin: 3rem 0 2rem 15rem;
   }
 
   .hero-headline-container {
@@ -161,17 +161,18 @@ p {
     position: relative;
     top: 4rem;
     left: 10rem;
-    height: 93%;
-    width: 50%;
+    width: 800px;
+    height: 480px;
     background-color: var(--accent);
   }
 
-  .mainImg {
-    position: relative;
-    top: 2rem;
-    left: 8rem;
+  .main-img {
+    position: absolute;
+    left: -110px;
+    bottom: 0;
+    width: 400px;
     height: auto;
-    width: 40%;
+    display: block;
   }
 
   .button-container {
@@ -182,7 +183,7 @@ p {
   }
 
   .button {
-    background-color: var(--accent);
+    background-color: var(--light-primary);
     color: var(--primary-text);
     border: none;
     padding: 10px 20px;
@@ -201,6 +202,138 @@ p {
   .button img {
     width: 30px;
     height: 30px;
+  }
+
+  /* SKILL SECTION */
+
+  .skill-section {
+    padding: 2rem;
+    height: auto;
+    background-color: var(--light-primary);
+  }
+
+  .skill-row {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .skill-row:first-child {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .skill-row:last-child {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .skill-title-container {
+    padding: 2rem;
+    font-size: 100px;
+    font-family: var(--primary-font);
+    letter-spacing: -4px;
+    height: 190px;
+    text-align: center;
+    color: var(--primary-text);
+    background-color: var(--accent);
+  }
+
+  strong {
+    color: var(--primary-text);
+  }
+
+  .skill-description-container {
+    padding: 2rem;
+    text-align: justify;
+    height: 190px;
+    line-height: 1.5;
+    font-family: var(--secondary-font);
+    color: var(--primary-text);
+    background-color: var(--dark-primary);
+  }
+
+  /* PROJECT SECTION */
+  .project-section {
+    padding: 4rem 2rem 2rem 2rem;
+    height: 170vh;
+    background-color: var(--dark-primary);
+  }
+
+  .project-title-container {
+    position: absolute;
+    background-color: var(--accent);
+    width: 100%;
+    height: 7%;
+    left: 0;
+  }
+
+  .project-title-container h1 {
+    position: relative;
+    bottom: 15px;
+    font-size: 100px;
+    font-family: var(--primary-font);
+    letter-spacing: -4px;
+    text-align: center;
+    color: var(--primary-text);
+  }
+  
+  .project-content-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 6rem;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem 2rem 2rem;
+    width: 500px;
+    gap: 1rem;
+  }
+
+  .project-image img {
+    width: 500px;
+    height: auto;
+  }
+
+  .project-title {
+    font-size: 30px;
+    font-family: var(--primary-font);
+    color: var(--primary-text);
+  }
+
+  .project-description {
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  /*ABOUT ME*/
+
+  .about-me-section {
+    padding: 2rem;
+    height: auto;
+    background-color: var(--light-primary);
+  }
+
+  .about-me-title {
+    position: absolute;
+    background-color: var(--accent);
+    padding: 1rem;
+  }
+
+  .about-me-title:first-child {
+    left: 0;
+  }
+
+  .about-me-title::nth-child(2) {
+    right: 0;
+  }
+
+  .achievement-container {
+    background-color: var(--dark-primary);
+    height: 1000px;
+    width: 500px;
   }
 }
 /* For large desktop with 1280px and above */
