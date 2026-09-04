@@ -23,7 +23,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  scroll-padding-top: 5.5rem;
+  scroll-padding-top: 4.5rem;
 }
 
 body {
@@ -120,7 +120,7 @@ p {
     display: flex;
     flex-direction: row;
     padding: 2rem;
-    height: 90vh;
+    height: auto;
     background-color: var(--dark-primary);
   }
 
@@ -244,7 +244,7 @@ p {
   .skill-description-container {
     padding: 2rem;
     text-align: justify;
-    height: 190px;
+    height: auto;
     line-height: 1.5;
     font-family: var(--secondary-font);
     color: var(--primary-text);
@@ -254,7 +254,7 @@ p {
   /* PROJECT SECTION */
   .project-section {
     padding: 4rem 2rem 2rem 2rem;
-    height: 170vh;
+    height: auto;
     background-color: var(--dark-primary);
   }
 
@@ -320,20 +320,237 @@ p {
     position: absolute;
     background-color: var(--accent);
     padding: 1rem;
-  }
-
-  .about-me-title:first-child {
+    font-size: 25px;
     left: 0;
   }
 
-  .about-me-title::nth-child(2) {
+  .achievement-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: auto;
+    width: auto;
+    margin: 6rem 2rem 2rem 2rem;
+  }
+
+  .degree-container {
+    display: flex;
+    height: auto;
+    width: 500px;
+    background-color: var(--dark-primary);
+  }
+
+  .degree-container img {
+    height: 150px;
+    width: auto;
+    margin: 1rem 1rem 1rem 2rem;
+  }
+
+  .degree-container div {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    text-align: left;
+    line-height: 1.2;
+  }
+
+  .degree-container h2 {
+    font-size: 20px;
+    padding-bottom: 1rem;
+  }
+
+  .degree-container p {
+    font-size: 16px;
+  }
+
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 500px;
+    background-color: var(--dark-primary);
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+  
+  .experience-container h2 {
+    font-size: 35px;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .experience-container h3 {
+    font-size: 23px;
+    padding-bottom: 1rem;
+  }
+
+  .experience-container div {
+    display: flex;
+    flex-direction: row;
+    gap: 8.5rem;
+  }
+
+  .experience-container p {
+    font-size: 16px;
+  }
+
+  .seminar-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 500px;
+    background-color: var(--dark-primary);
+    margin-top: 2rem;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+
+  .seminar-container h2 {
+    font-size: 35px;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .seminar-container h3 {
+    font-size: 23px;
+    line-height: 1.2;
+  }
+
+  .seminar-container div {
+    margin-bottom: 2.4rem;
+  }
+
+  .seminar-container p {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .certificate-container {
+    padding: 2rem;
+    height: auto;
+    width: 100%;
+    background-color: var(--dark-primary);
+  }
+
+  .certificate-container img{
+    width: 280px;
+    height: auto;
+  }
+
+  .certificate-container h2 {
+    font-size: 35px;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .certificate-container div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .resume-container {
+    padding: 2rem;
+    height: auto;
+    width: 100%;
+    background-color: var(--dark-primary);
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .resume-container h3 {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .square-button {
+    background-color: var(--accent);
+    color: var(--primary-text);
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: var(--secondary-font);
+  }
+
+  /* CONTACTS SECTION */
+
+  .contact-section {
+    padding: 2rem;
+    height: auto;
+    width: 100%;
+    background-color: var(--dark-primary);
+  }
+
+  .contact-main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 2rem;
+    height: auto;
+    width: 100%;
+    margin-top: 8rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact-title {
+    position: absolute;
+    background-color: var(--accent);
+    padding: 1rem;
+    font-size: 25px;
     right: 0;
   }
 
-  .achievement-container {
-    background-color: var(--dark-primary);
-    height: 1000px;
-    width: 500px;
+  .links-container {
+    gap: 2rem;
+    height: auto;
+    width: auto;
+    background-color: var(--light-primary);
+    padding: 2rem 4rem 2rem 4rem;
+  }
+
+  .links-container h2 {
+    font-size: 35px;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .links-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .links-container img {
+    width: 100px;
+    height: auto;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 2rem;
+    height: 200px;
+    width: 100%;
+    background-color: var(--accent);
+    text-align: center;
+    align-content: center;
+  }
+
+  .footer h2 {
+    font-size: 30px;
+    padding-bottom: 1rem;
+  }
+
+  .footer p {
+    font-size: 20px;
   }
 }
 /* For large desktop with 1280px and above */
